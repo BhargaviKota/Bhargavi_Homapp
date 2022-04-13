@@ -13,7 +13,7 @@ h6,
 p,
 button,
 li,
-a {
+a,ul {
   font-family: "Montserrat", sans-serif;
 }
 /****************** navbar starts *******************/
@@ -386,10 +386,11 @@ a {
   box-shadow: 3px 3px 10px #00000029;
   border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 25px;
+  padding-top: 20px;
 }
 
 .services .cards .card p {
@@ -421,7 +422,7 @@ a {
     width: 280px;
     height: 250px;
 
-    gap: 10px;
+    gap: 20px;
   }
 
   .services .cards .card p {
@@ -744,22 +745,19 @@ a {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    
   }
 
   .scope .scopeElements .element {
     width: 300px;
     height: 300px;
-    
+
     gap: 20px;
     padding: 10px;
-    
   }
   .scope .scopeElements .element img {
     width: 100%;
     height: 160px;
   }
-  
 
   .scope .scopeElements .element h3 {
     font-size: 18px;
@@ -787,7 +785,7 @@ a {
   .scope {
     margin: 0px 20px;
   }
-  
+
   .scope .scopeElements {
     gap: 10px;
   }
@@ -800,11 +798,10 @@ a {
   .scope {
     margin: 0px 20px;
   }
-  
+
   .scope .scopeElements {
     gap: 40px;
   }
-  
 }
 
 /************* scope ends *****************/
@@ -1237,8 +1234,8 @@ a {
 }
 
 .RO-services .cards .card {
-  width: 440px;
-  height: 610px;
+  width: 460px;
+  height: 670px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 3px 3px 10px #00000029;
   border-radius: 10px;
@@ -1262,8 +1259,10 @@ a {
   height: 265px;
 }
 
-.RO-services .cards .card .col {
-  color: #2675cf;
+
+.RO-services .cards .card ul{
+  font-size: 16px;
+  color: #000000;
 }
 
 .RO-services .cards .card .price {
@@ -1274,78 +1273,91 @@ a {
   align-items: center;
 }
 
-@media(max-width:1700px){
+@media (max-width: 1700px) {
   .RO-services {
     margin: 0px 30px;
-   
+
     gap: 70px;
   }
-  
+
   .RO-services h2 {
     font-size: 25px;
   }
-  
+
   .RO-services .cards {
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content:center;
     gap: 50px;
   }
-  
+
   .RO-services .cards .card {
     width: 250px;
-    height: 450px;
-    
-    padding: 10px ;
-   
+    height: 550px;
+    padding: 10px;
     gap: 12px;
-    
   }
+
   .RO-services .cards .card img {
     width: 200px;
     height: 150px;
   }
-  
+.RO-services .cards .card ul{
+  font-size: 10px;
+  color: #000000;
+}
+
   .RO-services p {
     font-size: 12px;
-    font-weight: bold; 
+    font-weight: bold;
     color: #212a38;
   }
-  
+
   .RO-services .cards .card img {
     width: 320px;
     height: 220px;
   }
-  
-  
-  
+
   .RO-services .cards .card .price {
     width: 90%;
     height: 20px;
-   
   }
-  
 }
 
-@media(max-width:1200px){
-  .RO-services .cards{
+@media (max-width: 1200px) {
+  .RO-services .cards {
     gap: 80px;
   }
 }
 
-@media(max-width:1000px){
-  .RO-services .cards{
+@media (max-width: 1000px) {
+  .RO-services .cards {
     gap: 100px;
+  }
+}
+@media(max-width:600px){
+  .RO-services .cards{
+    gap: 25px;
+  }
+  .RO-services .cards .card{
+    width: 350px;
+    height: 600px;
+  }
+  .RO-services .cards .card p{
+    font-size: 16px;
+  }
+  .RO-services .cards .card li{
+    font-size: 14px;
   }
 }
 
 /************** plumbing services *************/
 .plumbing-service {
   margin: 100px 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
 }
 
 .plumbing-service h2 {
@@ -1395,7 +1407,6 @@ a {
 .plumbing-service .cards .card .content h3 {
   font-size: 30px;
   text-align: center;
-  
 }
 .plumbing-service .cards .card .content .data {
   width: 100%;
@@ -1406,90 +1417,88 @@ a {
   font-size: 25px;
 }
 
-@media(max-width:1700px){
+@media (max-width: 1700px) {
   .plumbing-service {
     margin: 0px 50px;
-      
-      gap: 80px;
+
+    gap: 80px;
   }
-  
+
   .plumbing-service h2 {
     font-size: 25px;
-    
   }
-  
+
   .plumbing-service .cards {
-    
     gap: 50px;
   }
-  
+
   .plumbing-service .cards .card {
-    width: 350px;
+    width: 300px;
     height: 400px;
     overflow-y: hidden;
   }
   .plumbing-service .cards .card .image {
-    width: 350px;
+    width: 300px;
     height: 250px;
-    
   }
-  
+
   .plumbing-service .cards .card .content {
-    width: 350px;
+    width: 300px;
     height: 120px;
-    
+
     margin-top: -30px;
     gap: 25px;
-    
   }
   .plumbing-service .cards .card .content h3 {
     font-size: 15px;
   }
   .plumbing-service .cards .card .content .data {
-    
     font-size: 12px;
-  }  
+  }
 }
 
-@media(max-width:1250px){
-  .plumbing-service{
-    margin: 0px 30px ;
+@media (max-width: 1250px) {
+  .plumbing-service {
+    margin: 0px 30px;
   }
-  .plumbing-service .cards{
+  .plumbing-service .cards {
     gap: 35px;
   }
-  .plumbing-service .cards .card{
+  .plumbing-service .cards .card {
     width: 300px;
     height: 380px;
   }
   .plumbing-service .cards .card .image {
     width: 300px;
     height: 250px;
-    
   }
-  
+
   .plumbing-service .cards .card .content {
     width: 300px;
     height: 100px;
   }
-    
 }
-@media(max-width:1030px){
-  .plumbing-service{
-     margin: 0px 50px;
+@media (max-width: 1030px) {
+  .plumbing-service {
+    margin: 0px 50px;
   }
-  .plumbing-service .cards{
+  .plumbing-service .cards {
     column-gap: 100px;
     row-gap: 30px;
   }
 }
-@media(max-width:800px)
-{
-  .plumbing-service{
+@media (max-width: 800px) {
+  .plumbing-service {
     margin: 0px 20px;
- }
+  }
 
- .plumbing-service .cards{
-   gap: 40px;
- }
+  .plumbing-service .cards {
+    gap: 40px;
+  }
+}
+@media (max-width:600px){
+  .plumbing-service .cards {
+   gap: 10px;
+    margin-top: -40px;
+  }
 }
